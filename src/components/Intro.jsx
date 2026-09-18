@@ -1,4 +1,4 @@
-import "../styles/intro.css";
+import "../styles/Intro.css";
 import Reveal from "./Reveal";
 import StaggerText from "./StaggerText";
 
