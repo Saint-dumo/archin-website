@@ -1,23 +1,26 @@
 import "../styles/interiors.css";
+import heroImage from "../assets/archin-hero.jpeg";
+import projectImage from "../assets/archin-project.jpeg";
+import constructionImage from "../assets/archin-construction.jpeg";
 
 function Interiors() {
   const spaces = [
-    {
-      number: "01",
-      name: "Living",
-      image: "/src/assets/archin-hero.jpeg",
-    },
-    {
-      number: "02",
-      name: "Dining",
-      image: "/src/assets/archin-project.jpeg",
-    },
-    {
-      number: "03",
-      name: "The Detail",
-      image: "/src/assets/archin-construction.jpeg",
-    },
-  ];
+  {
+    number: "01",
+    name: "Living",
+    image: heroImage,
+  },
+  {
+    number: "02",
+    name: "Dining",
+    image: projectImage,
+  },
+  {
+    number: "03",
+    name: "The Detail",
+    image: constructionImage,
+  },
+];
 
   return (
     <section className="interiors" id="interiors">

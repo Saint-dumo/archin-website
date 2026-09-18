@@ -1,32 +1,35 @@
 import "../styles/process.css";
+import projectImage from "../assets/archin-project.jpeg";
+import constructionImage from "../assets/archin-construction.jpeg";
+import project2Image from "../assets/archin-project2.jpeg";
 
 function Process() {
-  const stages = [
-    {
-      number: "01",
-      title: "The Vision",
-      label: "Concept",
-      description:
-        "Every project begins with an idea. A considered response to the people, place and purpose behind the space.",
-      image: "/src/assets/archin-project.jpeg",
-    },
-    {
-      number: "02",
-      title: "Taking Shape",
-      label: "Construction",
-      description:
-        "From foundation to structure, careful execution turns architectural intent into something tangible.",
-      image: "/src/assets/archin-construction.jpeg",
-    },
-    {
-      number: "03",
-      title: "The Reality",
-      label: "Completion",
-      description:
-        "The final space brings architecture, materials and detail together to create something made to be lived in.",
-      image: "/src/assets/archin-project2.jpeg",
-    },
-  ];
+ const stages = [
+  {
+    number: "01",
+    title: "The Vision",
+    label: "Concept",
+    description:
+      "Every project begins with an idea. A considered response to the people, place and purpose behind the space.",
+    image: projectImage,
+  },
+  {
+    number: "02",
+    title: "Taking Shape",
+    label: "Construction",
+    description:
+      "From foundation to structure, careful execution turns architectural intent into something tangible.",
+    image: constructionImage,
+  },
+  {
+    number: "03",
+    title: "The Reality",
+    label: "Completion",
+    description:
+      "The final space brings architecture, materials and detail together to create something made to be lived in.",
+    image: project2Image,
+  },
+];
 
   return (
     <section className="process" id="process">

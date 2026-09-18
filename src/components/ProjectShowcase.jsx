@@ -1,4 +1,5 @@
 import "../styles/project-showcase.css";
+import projectImage from "../assets/archin-project.jpeg";
 
 function ProjectShowcase() {
   return (
@@ -18,7 +19,7 @@ function ProjectShowcase() {
       <div className="featured-project">
         <div className="featured-project-image">
           <img
-            src="/src/assets/archin-project.jpeg"
+            src={projectImage}
             alt="Contemporary residential project by ARCHIN INT'L"
           />
 

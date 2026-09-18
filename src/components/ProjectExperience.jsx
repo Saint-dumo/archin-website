@@ -1,4 +1,6 @@
 import "../styles/project-experience.css";
+import projectImage from "../assets/archin-project.jpeg";
+import constructionImage from "../assets/archin-construction.jpeg";
 
 function ProjectExperience() {
   return (
@@ -44,7 +46,7 @@ function ProjectExperience() {
       <div className="project-hero-image">
 
         <img
-          src="/src/assets/archin-project.jpeg"
+          src={projectImage}
           alt="ARCHIN residential project"
         />
 
@@ -91,7 +93,7 @@ function ProjectExperience() {
 
         <div className="project-gallery-large">
           <img
-            src="/src/assets/archin-construction.jpeg"
+            src={constructionImage}
             alt="Residential project during construction"
           />
 
@@ -100,7 +102,7 @@ function ProjectExperience() {
 
         <div className="project-gallery-small">
           <img
-            src="/src/assets/archin-project.jpeg"
+            src={projectImage}
             alt="Residential architectural visualization"
           />
 

@@ -1,4 +1,5 @@
 import "../styles/Intro.css";
+import introImage from "../assets/archin-hero.jpeg";
 import Reveal from "./Reveal";
 import StaggerText from "./StaggerText";
 
@@ -20,7 +21,7 @@ function Intro() {
       <Reveal className="intro-content">
          <div className="intro-image">
           <img
-            src="/src/assets/archin-hero.jpeg"
+            src={introImage}
             alt="ARCHIN architectural interior"
           />
 
