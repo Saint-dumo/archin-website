@@ -1,0 +1,246 @@
+.interiors {
+  padding: 150px var(--page-padding);
+  background: var(--color-neutral);
+  color: var(--color-charcoal);
+}
+
+.interiors-header {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 40px;
+
+  max-width: var(--container-width);
+  margin: 0 auto 110px;
+}
+
+.interiors-label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  color: var(--color-slate);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.interiors-label span:first-child {
+  color: var(--color-gold);
+}
+
+.interiors-heading {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 50px;
+  align-items: end;
+}
+
+.interiors-heading h2 {
+  margin: 0;
+
+  font-size: clamp(4rem, 7vw, 7rem);
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.interiors-heading h2 em {
+  color: var(--color-gold);
+  font-family: Georgia, serif;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.interiors-heading p {
+  color: var(--color-slate);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+
+/* GALLERY */
+
+.interiors-gallery {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.interior-space {
+  margin-bottom: 110px;
+}
+
+.interior-image {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+  background: #ddd;
+}
+
+.interior-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 1s ease;
+}
+
+.interior-space:hover .interior-image img {
+  transform: scale(1.025);
+}
+
+.interior-number {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 45px;
+  height: 45px;
+
+  background: var(--color-white);
+
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+}
+
+.interior-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(31, 41, 55, 0.25);
+}
+
+.interior-info h3 {
+  font-size: clamp(2rem, 4vw, 4rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+}
+
+.interior-info span {
+  font-size: 0.65rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+
+/* CTA */
+
+.interiors-cta {
+  display: grid;
+  grid-template-columns: 180px 1fr auto;
+  gap: 40px;
+  align-items: end;
+
+  max-width: var(--container-width);
+  margin: 160px auto 0;
+
+  padding-top: 30px;
+  border-top: 1px solid rgba(31, 41, 55, 0.25);
+}
+
+.interiors-cta > span {
+  color: var(--color-slate);
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.interiors-cta h3 {
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.interiors-cta h3 em {
+  color: var(--color-gold);
+  font-family: Georgia, serif;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.interiors-cta button {
+  padding: 15px 0;
+
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-charcoal);
+
+  display: flex;
+  gap: 15px;
+
+  cursor: pointer;
+
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.interiors-cta button span {
+  transition: transform var(--transition-fast);
+}
+
+.interiors-cta button:hover span {
+  transform: translate(5px, -5px);
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .interiors-header {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .interiors-heading {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .interior-image {
+    height: 65vh;
+  }
+
+  .interiors-cta {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .interiors {
+    padding: 100px 6%;
+  }
+
+  .interiors-heading h2 {
+    font-size: clamp(3.5rem, 16vw, 5rem);
+  }
+
+  .interior-image {
+    height: 60vh;
+  }
+
+  .interior-info {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .interior-space {
+    margin-bottom: 80px;
+  }
+
+  .interiors-cta {
+    margin-top: 100px;
+  }
+}

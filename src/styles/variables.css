@@ -1,0 +1,25 @@
+:root {
+  /* Brand colours */
+  --color-charcoal: #1f2937;
+  --color-gold: #d4a862;
+  --color-neutral: #f4f4f4;
+  --color-white: #ffffff;
+  --color-black: #0a0a0a;
+
+  /* Supporting colours */
+  --color-slate: #687280;
+  --color-earth: #3e2f21;
+  --color-forest: #2f4f3e;
+
+  /* Layout */
+  --container-width: 1400px;
+  --page-padding: 5%;
+
+  /* Typography */
+  --font-heading: Arial, Helvetica, sans-serif;
+  --font-body: Arial, Helvetica, sans-serif;
+
+  /* Transitions */
+  --transition-fast: 0.3s ease;
+  --transition-medium: 0.6s ease;
+}

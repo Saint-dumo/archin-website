@@ -1,0 +1,208 @@
+.services {
+  padding: 150px var(--page-padding) 100px;
+  background: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+.services-header {
+  display: grid;
+  grid-template-columns: 180px 1fr 320px;
+  gap: 40px;
+  align-items: end;
+  max-width: var(--container-width);
+  margin: 0 auto 110px;
+}
+
+.services-label {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-self: start;
+
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
+.services-label span:first-child {
+  color: var(--color-gold);
+}
+
+.services-header h2 {
+  margin: 0;
+  font-size: clamp(4rem, 7vw, 7.5rem);
+  font-weight: 300;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.services-header h2 em {
+  color: var(--color-gold);
+  font-family: Georgia, serif;
+  font-weight: 400;
+  text-transform: none;
+}
+
+.services-intro {
+  max-width: 320px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* SERVICE CARDS */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: var(--container-width);
+  margin: 0 auto;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.service-card {
+  position: relative;
+  min-height: 460px;
+  padding: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border-right: 1px solid rgba(255, 255, 255, 0.18);
+
+  transition:
+    background var(--transition-medium),
+    transform var(--transition-medium);
+}
+
+.service-card:first-child {
+  border-left: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.service-card:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.service-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.service-number {
+  color: var(--color-gold);
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+}
+
+.service-arrow {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+  transition: transform var(--transition-fast);
+}
+
+.service-card:hover .service-arrow {
+  transform: translate(5px, -5px);
+}
+
+.service-card-content h3 {
+  margin-bottom: 24px;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+  font-weight: 300;
+  letter-spacing: -0.04em;
+}
+
+.service-card-content p {
+  max-width: 360px;
+  margin-bottom: 30px;
+
+  color: rgba(255, 255, 255, 0.58);
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+.service-tags {
+  color: var(--color-gold);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* BOTTOM DISCIPLINES */
+
+.services-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 40px;
+
+  max-width: var(--container-width);
+  margin: 35px auto 0;
+
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.65rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .services-header {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    margin-bottom: 70px;
+  }
+
+  .services-label {
+    flex-direction: row;
+  }
+
+  .services-intro {
+    max-width: 500px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 380px;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .service-card:first-child {
+    border-left: none;
+  }
+
+  .service-card:last-child {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .services {
+    padding: 100px 6% 70px;
+  }
+
+  .services-header h2 {
+    font-size: clamp(3.5rem, 16vw, 5rem);
+  }
+
+  .service-card {
+    min-height: 350px;
+    padding: 25px 0;
+  }
+
+  .services-footer {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px 25px;
+    line-height: 1.5;
+  }
+}
