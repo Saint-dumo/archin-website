@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <header className="navbar">
       <a href="/" className="navbar-logo">
-        ARCHIN <span>INT'L</span>
+        <img src="/src/assets/archin-logo.png" alt="ARCHIN INT'L" />
       </a>
 
       <nav className="navbar-links">
